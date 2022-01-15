@@ -11,7 +11,7 @@ fetch('https://api.github.com/repos/MystPi/ninetails/releases/latest')
     if ('v' + version !== res.tag_name) {
       let popup = document.getElementById('popup');
       popup.style.display = 'block';
-      popup.href = '/download';
+      popup.href = '/ninetails/download';
     }
   });
 
