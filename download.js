@@ -6,7 +6,7 @@ fetch('https://api.github.com/repos/mystpi/ninetails/releases/latest')
     version.href = res.html_url;
 
     const desc = document.getElementById('desc');
-    desc.innerText = res.body;
+    desc.innerHTML = marked.parse(res.body);
 
     res.assets.forEach(asset => {
       const li = document.createElement('li');
