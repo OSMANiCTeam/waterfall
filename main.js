@@ -5,15 +5,17 @@ const version = urlParams.get('v');
 const engine = urlParams.get('e');
 
 
-fetch('https://api.github.com/repos/MystPi/ninetails/releases/latest')
-  .then(res => res.json())
-  .then(res => {
-    if ('v' + version !== res.tag_name) {
-      let popup = document.getElementById('popup');
-      popup.style.display = 'block';
-      popup.href = '/ninetails/download';
-    }
-  });
+if (version !== 'false') {
+  fetch('https://api.github.com/repos/MystPi/ninetails/releases/latest')
+    .then(res => res.json())
+    .then(res => {
+      if ('v' + version !== res.tag_name) {
+        let popup = document.getElementById('popup');
+        popup.style.display = 'block';
+        popup.href = '/ninetails/download';
+      }
+    });
+}
 
 
 bar.addEventListener('keydown', (e) => {
