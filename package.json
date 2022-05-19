@@ -1,8 +1,8 @@
 {
-  "name": "ninetails",
-  "productName": "Ninetails",
-  "version": "3.8.0",
-  "description": "A private, fast, and beautiful web browser.",
+  "name": "waterfall",
+  "productName": "Waterfall",
+  "version": "1.0.0",
+  "description": "A simple web browser for Windows and Linux",
   "main": "src/index.js",
   "scripts": {
     "start": "electron-forge start",
@@ -16,22 +16,22 @@
   },
   "keywords": [],
   "author": {
-    "name": "MystPi",
-    "email": "feedback@myst.eml.monster"
+    "name": "Josh Warren",
+    "email": "osmanicteam@gmail.com"
   },
   "license": "MIT",
   "config": {
     "forge": {
       "packagerConfig": {
         "icon": "./appicons/ninetails",
-        "name": "Ninetails",
-        "executableName": "ninetails"
+        "name": "Waterfall",
+        "executableName": "browser"
       },
       "makers": [
         {
           "name": "@electron-forge/maker-squirrel",
           "config": {
-            "name": "ninetails"
+            "name": "waterfall"
           }
         },
         {
@@ -43,7 +43,7 @@
         {
           "name": "@electron-forge/maker-deb",
           "config": {
-            "icon": "./appicons/ninetails.png"
+            "icon": "./appicons/waterfall.png"
           }
         },
         {
