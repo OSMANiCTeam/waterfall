@@ -3,7 +3,7 @@ fetch('../package.json')
   .then(res => {
     version = res.version;
     createTab();
-    fetch('https://api.github.com/repos/MystPi/ninetails/releases/latest')
+    fetch('https://api.github.com/repos/OSMANiCTeam/waterfall/releases/latest')
       .then(res => res.json())
       .then(res => {
         if (res.tag_name !== 'v' + version) {
