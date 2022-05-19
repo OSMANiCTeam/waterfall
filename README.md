@@ -1,2 +1,2 @@
 # Waterfall Browser
-A simple browser for Windows, Linux and macOS
+A simple browser for Windows and Linux
